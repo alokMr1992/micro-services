@@ -36,11 +36,11 @@ public class UserResourceController {
 		if (null == user) {
 			throw new UserNotFoundException("id = " + id);
 		}
-		
+
 		Resource<User> resource = new Resource<User>(user);
 		ControllerLinkBuilder linkBuilder = linkTo(methodOn(this.getClass()).retrieveAllUser());
 		resource.add(linkBuilder.withRel("all-users"));
-		
+
 		return resource;
 	}
 
