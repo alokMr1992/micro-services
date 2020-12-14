@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+src/test/java/.DS_Store
+src/test/java/com/.DS_Store
+src/test/java/com/practice/.DS_Store
